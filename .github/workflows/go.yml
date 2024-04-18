@@ -9,7 +9,7 @@ on:
 jobs:
 
   test:
-    go-version: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         go_version: ['1.18', '1.17', '>=1.18']
